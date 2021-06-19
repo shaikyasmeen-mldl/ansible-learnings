@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+  - name: Download foo.conf
+    get_url:
+    url: https://www.cs.bham.ac.uk/~jxb/DSA/dsa.pdf
+    dest: /etc/yasu.conf
+    mode: '0440'
