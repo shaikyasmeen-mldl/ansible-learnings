@@ -2,8 +2,8 @@
 - hosts: localhost
   become: yes
   tasks:
-  - name: Download foo.conf
+  - name: Download dsa
     get_url:
-      url: http://example.com/path/file.conf
-      dest: /etc/foo.conf
+      url: https://www.cs.bham.ac.uk/~jxb/DSA/dsa.pdf
+      dest: /etc/DSA
       mode: '0440'
