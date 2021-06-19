@@ -4,6 +4,6 @@
   tasks:
   - name: Download foo.conf
     get_url:
-    url: https://www.cs.bham.ac.uk/~jxb/DSA/dsa.pdf
-    dest: /etc/yasu.conf
-    mode: '0440'
+      url: http://example.com/path/file.conf
+      dest: /etc/foo.conf
+      mode: '0440'
